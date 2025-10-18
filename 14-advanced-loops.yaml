@@ -1,6 +1,6 @@
 - name: advanced loops in ansible
   hosts: localhost
-  loops:
+  loop:
   - { name: 'nginx', state: 'absent'}
   - { name: 'postfox', state: 'latest'}
   - { name: 'mailx', state: 'installed'}
