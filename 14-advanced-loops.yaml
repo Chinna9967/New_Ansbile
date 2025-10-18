@@ -9,5 +9,5 @@
 
     loop:
     - { name: 'nginx', state: 'absent'}
-    - { name: 'postfox', state: 'latest'}
+    - { name: 'postfix', state: 'latest'}
     - { name: 'mailx', state: 'installed'}
