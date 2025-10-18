@@ -1,6 +1,13 @@
 - name: variables in ansible
   hosts: mongodb
+  vars:
+    COURSE: Devops
+    TRINER: Siva
+    DURATION: 100 days
   tasks:
   - name: printing on terminal
     ansible.builtin.debug:
       msg: "Hello, im learning ansible"
+  - name: printing on terminal
+    ansible.builtin.debug:
+      msg: "Hello, im learning ansible, {{COURSE}}"
