@@ -3,7 +3,7 @@
   become: yes
   vars_prompt:
   - name: username
-    prompt: plz enter your name:
+    prompt: plz enter your name
     private: false
   - name: password
     prompt: plz enter your password
