@@ -1,5 +1,6 @@
 - name: advanced loops in ansible
   hosts: localhost
+  become: yes
   tasks: 
   - name: installing and removing packages
     ansible.builtin.yum:
@@ -7,6 +8,6 @@
       state: "{{item.state}}"
 
     loop:
-  - { name: 'nginx', state: 'absent'}
-  - { name: 'postfox', state: 'latest'}
-  - { name: 'mailx', state: 'installed'}
+    - { name: 'nginx', state: 'absent'}
+    - { name: 'postfox', state: 'latest'}
+    - { name: 'mailx', state: 'installed'}
